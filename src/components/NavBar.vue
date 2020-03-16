@@ -1,7 +1,7 @@
 <template>
   <v-app-bar app clipped-left dark color="blue">
-     <v-app-bar-nav-icon v-if="user" @click="drawer ? hideDrawer() : showDrawer()" />    
-     <v-toolbar-title class="font-weight-light">
+    <v-app-bar-nav-icon v-if="user" @click="drawer ? hideDrawer() : showDrawer()" />
+    <v-toolbar-title class="font-weight-light">
       <span>Movies</span>
       <span class="font-weight-regular">Database</span>
     </v-toolbar-title>
@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import { mapGetters , mapActions } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 export default {
   name: 'NavBar',
   computed: {
